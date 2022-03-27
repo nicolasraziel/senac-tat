@@ -1,0 +1,22 @@
+enable
+
+	configure terminal
+		
+	interface gigabitEthernet 0/1
+	
+		description Interface de acesso a Internet do Grupo-6		
+
+		ip address dhcp
+		
+		no shutdown
+		
+		end
+
+copy running-config startup-config
+
+!Comandos para visualização das informações:
+show running-config
+show ip interface brief
+ping 10.26.40.191
+ping 10.26.40.190
+ping 8.8.8.8
