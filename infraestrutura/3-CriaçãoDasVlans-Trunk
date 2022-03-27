@@ -1,0 +1,70 @@
+enable
+
+	
+	configure terminal
+
+
+		vlan 60
+			name svi-g6
+		vlan 61
+			name nicolas 
+		vlan 62
+			name heitor
+
+		vlan 65
+			name wifi
+			exit
+
+
+		interface fastEthernet 0/2
+			description Interface de Acesso da VLAN 61 do Nicolas
+			switchport mode access
+			switchport access vlan 61
+			exit
+		
+
+		interface fastEthernet 0/3
+			description Interface de Acesso da VLAN 62 do Heitor
+			switchport mode access
+			switchport access vlan 62
+			exit
+
+
+		interface fastEthernet 0/6
+			description Interface de Acesso da VLAN 65 Wireless
+			switchport mode access
+			switchport access vlan 65
+			exit
+		
+
+		interface range fastEthernet 0/7 - 23
+			shutdown
+			exit
+                
+        interface fastEthernet 0/4
+            shutdown
+            exit
+
+        interface fastEthernet 0/5
+            shutdown
+            exit
+                        
+
+		interface fastEthernet 0/24
+			description Interface de Trunk com o Router 2911 do Grupo-6
+			switchport trunk encapsulation dot1q
+			switchport mode trunk
+		end
+
+copy running-config startup-config
+	
+!Comandos para visualização das informações:
+show running-config
+show vlan brief
+show vlan id 
+show vlan name 
+show interface status
+show interface trunk
+show ip interface brief
+show interfaces fastEthernet 0/24 status
+show interfaces fastEthernet 0/24 switchport
