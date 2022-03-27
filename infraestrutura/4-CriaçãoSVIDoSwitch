@@ -1,0 +1,19 @@
+enable
+
+	configure terminal
+	ip default-gateway 172.16.60.254
+  
+  
+    interface vlan 60
+		description Interface SVI de Gerenciamento do Grupo-6?
+		ip address 172.16.60.253 255.255.255.0
+		no shutdown
+		end 
+
+copy running-config startup-config 
+
+!Comandos para visualização das informações:
+show running-config
+show ip interface brief
+show vlan brief
+show vlan id 
