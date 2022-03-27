@@ -1,0 +1,33 @@
+enable
+
+
+	configure terminal
+		
+
+	interface serial 0/0/0
+	    description Interface Grupo-6 para Grupo-1
+		ip address 192.168.1.21 255.255.255.252
+		clock rate 64000
+		bandwidth 64
+		no shutdown
+		exit
+		
+
+	interface serial 0/0/1
+	    description Interface Grupo-6 para Grupo-5
+		ip address 192.168.1.18 255.255.255.252
+		bandwidth 64
+		no shutdown
+		
+		!Saindo das configurações da interface
+		end
+
+	!Salvando as informações
+	copy running-config startup-config
+
+	!Comandos para visualização das informações:
+show running-config
+show ip interface brief
+show ip route
+ping 192.168.1.21 (serial 0/0/0)
+ping 192.168.1.18 (serial 0/0/1)
