@@ -1,0 +1,72 @@
+enable
+
+clock set 00:00:00 08 March 2022
+
+	!Acessar modo de configuração global
+	configure terminal
+  
+
+	hostname sw-g6
+  
+
+	service password-encryption
+	
+
+	service timestamps log datetime msec
+	
+
+	login block-for 120 attempts 4 within 60
+  
+
+	no ip domain-lookup
+  
+
+	banner motd acesso autorizado somente a funcionarios da NR-Maj
+  
+
+	enable secret 123@senac
+  
+
+	username nicolas privilege 15 secret 123@senac
+	username heitor privilege 15 secret 123@senac
+
+	ip domain-name senac.br
+  
+
+	crypto key generate rsa general-keys modulus 1024
+	
+	ip ssh version 2
+	
+	ip ssh time-out 60
+	
+	ip ssh authentication-retries 2
+	
+
+	line console 0
+		
+		password 123@senac
+		
+		login local
+		
+		logging synchronous
+		
+		exec-timeout 5 30
+		
+		exit
+	
+	line vty 0 4
+		
+		password 123@senac
+		
+		login local 
+		
+		logging synchronous
+		
+		exec-timeout 5 30
+		
+		transport input ssh
+		
+		end
+
+copy running-config startup-config
+show running-config
