@@ -1,0 +1,43 @@
+enable
+
+
+	configure terminal
+
+        !Configuração do Pool do DHCP Server da VLAN do Nicolas
+		ip dhcp excluded-address 172.16.61.1 172.16.61.100
+		ip dhcp excluded-address 172.16.61.200 172.16.61.254
+		ip dhcp pool vlan-61
+			network 172.16.61.0 255.255.255.0
+			default-router 172.16.61.254
+			dns-server 8.8.8.8 8.8.4.4
+			domain-name senac.br
+			exit
+
+        !Configuração do Pool do DHCP Server da VLAN do heitor
+		ip dhcp excluded-address 172.16.62.1 172.16.62.100
+		ip dhcp excluded-address 172.16.62.200 172.16.62.254
+		ip dhcp pool vlan-62
+			network 172.16.62.0 255.255.255.0
+			default-router 172.16.62.254
+			dns-server 8.8.8.8 8.8.4.4
+			domain-name senac.br
+			exit
+
+	    !Configuração do Pool do DHCP Server da VLAN do Wi-Fi
+		ip dhcp excluded-address 172.16.65.1 172.16.65.100
+		ip dhcp excluded-address 172.16.65.200 172.16.65.254
+		ip dhcp pool vlan-65
+			network 172.16.65.0 255.255.255.0
+			default-router 172.16.65.254
+			dns-server 8.8.8.8 8.8.4.4
+			domain-name senac.br
+			end
+
+!Salvando as configurações
+copy running-config startup-config
+
+!Visualizando as configurações
+show running-config
+show ip interface brief
+show ip route
+show ip route connected
