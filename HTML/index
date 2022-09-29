@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut" href="img/favicon.ico" type="image/x-icon">
+
+    <title> R&B </title>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="fotos.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!--Carousel-->
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+          <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide img-fluid mx-auto" src="img/slide1.jpg" alt="" width="1980" height="720">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>RESTAURANTE R&B</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste id itaque. Quo, eos non. Tempora animi ad deleniti provident dicta iusto eos iste, expedita laudantium, temporibus quidem odio eum?</p>
+                <p><a class="btn btn-lg btn-primary" href="idealizadores.html" role="button">Conheça os Idealizadores</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide img-fluid mx-auto" src="img/slide2.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>RESTAURANTE R&B</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, earum voluptas. Quam eius quibusdam velit iure tempora eos autem, veritatis architecto, consectetur consequatur numquam rerum a vitae. Dolore, commodi quod!</p>
+                <p><a class="btn btn-lg btn-primary" href="idealizadores.html" role="button">Nossa História</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide img-fluid mx-auto" src="img/slide3.jpg" alt="Third slide" width="1980" height="720">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>RESTAURANTE R&B</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, necessitatibus in quas culpa repellendus cupiditate incidunt quae suscipit eligendi reiciendis at! Necessitatibus quibusdam magnam tempore? Magni est eligendi mollitia error.</p>
+                <p><a class="btn btn-lg btn-primary" href="fotos.html" role="button">Galeria</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Avançar</span>
+        </a>
+      </div>
+
+      <!--Fim Carousel-->
+
+
+
+      <div class="container marketing">
+
+        <!-- Três colunas de texto, abaixo do carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/restaurante.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Pratos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odit excepturi officiis incidunt labore nisi, repellat sint animi perspiciatis dolore illo dolores hic sit provident aperiam eos alias dolorem molestiae.</p>
+            <p><a class="btn btn-secondary" href="pratos.html" role="button"> Veja o Cardápio »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/drink.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Bebidas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, esse animi ipsam sint alias fuga dicta quae, reprehenderit, nemo nobis rem neque perspiciatis tempora magnam tempore assumenda ipsa id! Repudiandae?</p>
+            <p><a class="btn btn-secondary" href="drinks.html" role="button"> Veja Nossos Drinks»</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="img/porcao.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Porções</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut voluptatem quaerat ducimus consequuntur quibusdam officiis, incidunt sit, numquam dolores expedita labore voluptas deserunt fugit nihil nisi dolorem qui vel?</p>
+            <p><a class="btn btn-secondary" href="porcao.html" role="button"> Conheça Nossas Porções»</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"> Ambiente Perfeitamente<span class="text-muted"> Agradável</span></h2>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum labore aspernatur nisi consequuntur, at praesentium minima nesciunt illo nemo ex sint, molestiae reiciendis vero deserunt accusantium quae hic expedita optio?</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/restaurant.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Gastronomia de <span class="text-muted">Qualidade</span></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur laudantium provident eligendi, tempora, maxime quam minima quasi iste voluptas commodi totam ducimus aspernatur aut nostrum amet rem soluta molestias deleniti?</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/restaurante.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Happy <span class="text-muted">Hour</span></h2>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem eius fuga repellendus assumenda quae cumque vero dolorum ratione facere enim provident nam deserunt porro, voluptates laboriosam esse repellat maxime error.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/happy.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /FIM DAS FEATUREZINHAS *-* -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Companhia S.A., 2017-2018 · <a href="#">Privacidade</a> · <a href="#">Termos</a></p>
+      </footer>
+    </main>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
